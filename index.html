@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title>bootstrap</title>
+	<meta name="description" content="">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon" />
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+
+	<div class="container" id="main">
+
+		<div class="navbar navbar-fixed-top">
+			<div class="container">
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="/"><img src="images/logo.png" alt="Your Logo"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">Home</a>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Soft Toys <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Animal Soft Toys</a>
+								</li>
+
+								<li>
+									<a href="#">Bears</a>
+								</li>
+
+								<li>
+									<a href="#">Dolls</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li class="dropdown-header">Games</li>
+
+								<li>
+									<a href="#">Puzzels</a>
+								</li>
+
+								<li>
+									<a href="#">Children Games</a>
+								</li>
+							</ul><!-- end dropdown-menu -->
+						</li>
+					</ul>
+
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+					</form><!-- end navbar-form -->
+
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+								</li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+								</li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- end nav pull-right -->
+				</div><!-- end nav-collapse -->
+
+			</div><!-- end container -->
+		</div><!-- end navbar -->
+
+
+		<div class="carousel slide" id="myCarousel">
+
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1">
+					<div class="carousel-caption">
+						<h4>Henry's Toyshop</h4>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+
+				<div class="item" id="slide2">
+					<div class="carousel-caption">
+						<h4>Teddy Bears</h4>
+						<p>Everything in life I share, except of course my teddy bear!</p>
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption">
+						<h4>Toys For Christmas</h4>
+
+
+					</div><!-- end carousel-caption-->
+				</div><!-- end item -->
+			</div><!-- carousel-inner -->
+
+			<!-- Controls -->
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+		</div><!-- end myCarousel -->
+
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success!</h4>
+					<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+				</div><!-- end alert -->
+
+
+				<!-- Visible only on small devices -->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+				</div><!-- end well-small -->
+
+				<div class="well">
+					<div class="page-header">
+						<h1>Delight your Li'l Ones.</h1>
+					</div><!-- end page-header -->
+
+					<p class="lead">It's amazing how much a few pieces of plastic and paper will sell for if the purchasers are parents or grandparents.</p>
+
+					<a href="" class="btn bts btn-large btn-primary" id="alertMe">Click a nice big button</a>
+					<a href="" class="btn btn-large btn-link">or a secondary link</a>
+				</div><!-- end well -->
+
+			</div><!-- end col-12 -->
+		</div><!-- end bigCallout -->
+
+		<div class="row" id="featuresHeading">
+			<div class="col-12">
+				<h2>More Features</h2>
+				<p class="lead">Games, Puzzels, Magic Tricks and Many More for All ages.</p>
+			</div><!-- end col-12 -->
+		</div><!-- end featuresHeading -->
+		<div class="row" id="features">
+			<div class="col-sm-3 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Monchhichi Girl</h3>
+					</div><!-- end panel-heading -->
+					<img src="images/image1.jpeg" alt="Toys" class="img-circle">
+
+					<p>20cm Pink Classic Monchhichi Girl</p>
+					<a href="http://www.hamleys.com/soft-toys.irc" target="_blank" class="btn btn-warning btn-block">You May Also Like</a>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+
+			<div class="col-sm-3 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Boo Buddy</h3>
+					</div><!-- end panel-heading -->
+					<img src="images/image2.jpeg" alt="Toys" class="img-circle">
+
+					<p>TY Asia Boo Buddy</p>
+
+					<a href="http://www.hamleys.com/ty-asia-boo-buddy.ir" target="_blank" class="btn btn-danger btn-block">Check Us Out</a>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+
+
+			<div class="col-sm-3 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Fun Games</h3>
+					</div><!-- end panel-heading -->
+					<img src="images/image3.jpeg" alt="Games" class="img-circle">
+
+					<p>Loopin Louie Game</p>
+
+					<a href="http://www.hamleys.com/games.irc" target="_blank" class="btn btn-info btn-block">Search More Games</a>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+
+			<div class="col-sm-3 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Monchhichi Girl</h3>
+					</div><!-- end panel-heading -->
+					<img src="images/image1.jpeg" alt="Toys" class="img-circle">
+
+					<p>20cm Pink Classic Monchhichi Girl</p>
+					<a href="http://www.hamleys.com/soft-toys.irc" target="_blank" class="btn btn-warning btn-block">You May Also Like</a>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+
+		</div><!-- end features -->
+
+
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">
+				<h3>TOYS</h3>
+				<div class="tabbable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Map</a></li>
+						<li><a href="#tab2" data-toggle="tab">Toy History</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4><span class="glyphicon glyphicon-map-marker"></span> Henry's Toyshop <small>More like our favourite shopping spot</small></h4>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.0698850412746!2d-122.54935118504036!3d37.90542917973584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859072eb52315d%3A0x9bd461671a88fc87!2sHenry&#39;s+Toyshop!5e0!3m2!1sen!2sin!4v1480774209652" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+							<p>Henry's Toyshop is the oldest and largest toy shop in the world and one of the world's best-known retailers of toys. Founded by William Hamley as "Noahs Ark" in High Holborn, London, in 1760, it moved to its current site on Regent Street in 1881. This flagship store is set over seven floors, with more than 50,000 toys on sale. It is considered one of the city's prominent tourist attractions, receiving around five million visitors each year. The chain has ten other outlets in the United Kingdom and also has more than 60 franchises worldwide.</p>
+
+							<p>Henry's Toyshop was bought by the Icelandic investment company Baugur Group in 2003 but was taken over by Baugur's main investor, Landsbanki, when the group defaulted. In 2012, the French toy retailer Groupe Ludendo bought the business for £60 million.[1] In 2015 it was reported that Groupe Ludendo was negotiating the sale of Hamleys, possibly to a Hong Kong company owned by a relative of the owner of department store House of Fraser.Subsequently, it was sold to the Chinese footwear company C.banner for an estimated $154 million.</p>
+						</div><!-- end tab-pane -->
+
+
+						<div class="tab-pane" id="tab2">
+							<h4>Happiness is all about Toys.</h4>
+
+							<img src="images/toys.png" class="thumbnail pull-left" alt="Placeholder image">
+
+							<p>Henry's Toyshop opened its first store outside Europe in Amman, Jordan, on 18 June 2008. The three-storey store on Mecca Street is run by the group's franchisee Jordan Centre.A Dubai franchise opened with two stores on 4 November 2008The first store in South Asia was opened in Mumbai, India, on 9 April 2010. The 22,000-square-foot (2,000 m2) store is located in an upmarket shopping district in India's financial capital. A second store in India is located in the city of Chennai at the Express Avenue Mall. </p>
+
+							<p>The 11,000 sq ft store has a London bus that customers can walk up through. It now has ten stores in India, including two stores in Delhi, Ahmedabad, Bangalore, two stores in Mumbai, Pune and Chandigarh.Henry's Toyshop also opened its first store in the ‘City Of Joy’ at Quest Mall, Kolkata. It is also the first store of Hamleys in Eastern India. With this addition, the iconic brand is now present in 8 cities with 14 stores across India.</p>
+
+							<hr>
+
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> REGISTRATION!</a>
+
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+
+											<h4 class="modal-title">A Modal Window</h4>
+										</div><!-- end modal-header -->
+										<div class="modal-body">
+											<h4>Text in a modal</h4>
+
+											<p>Henry's Toyshop is the oldest and largest toy shop in the world.[4][5] It is named after William Hamley, who founded a toy shop called "Noah's Ark" at No. 231 High Holborn, London, in 1760.</p>
+
+											<h4>Popovers in a modal</h4>
+											<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
+
+											<h4>Tooltips in a modal</h4>
+											<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+
+											<hr>
+
+											<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+
+											<form class="form-horizontal">
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputName">Name</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputName" placeholder="Name" type="text">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+													<div class="col-lg-10">
+														<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+													</div>
+												</div>
+
+												<div class="form-group">
+													<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+														<button class="btn btn-success pull-right" type="submit">Send!</button>
+													</div>
+												</div>
+											</form>
+										</div><!-- end modal-body -->
+
+										<div class="modal-footer">
+											<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+										</div><!-- end modal-footer -->
+									</div><!-- end modal-content -->
+								</div><!-- end modal-dialog -->
+							</div><!-- end myModal -->
+
+						</div><!-- end tab-pane -->
+					</div><!-- end tab-content -->
+				</div><!-- end tabbable -->
+			</div><!-- end col-sm-6 -->
+
+			<div class="col-sm-6">
+				<h3>TOY'S MEMORIES</h3>
+				<p>In 2013, Henry's Toyshop announced plans to open 20 stores across India in collaboration with Reliance Brands Ltd..[23] The company also announced that a store would open in the One Utama Shopping Mall in Kuala Lumpur, in November 2013, the first in south-east Asia. Malaysia is now a home for 3 Hamleys stores, with new outlets opened in the Quill Mall, Kuala Lumpur and in the satellite terminal of Kuala Lumpur International Airport.</p>
+
+				<h4>Henry's Toyshop</h4>
+
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Life at Henry's Toyshop</h4>
+						<p class="list-group-item-text">William Henry dreamed of opening The Finest Toy Shop in the World and in 1760 he did exactly that.</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">People </h4>
+						<p class="list-group-item-text">We can't all be Tom Hanks but if you are thinking of joining us you've just taken your first step on the piano to achieving BIG things with us at Henry.</p>
+					</a>
+					<a href="#" class="list-group-item">
+						<h4 class="list-group-item-heading">Social Networking</h4>
+						<p class="list-group-item-text">We take fun very seriously indeed at Henry and we want to keep you up to date with all the excitement in our stores.</p>
+					</a>
+				</div><!-- list-group -->
+
+				<h5></h5>
+				<p>In 2014, Henry's Toyshop opened its first store in the Philippines. The store opened at noontime of December 21, in time for Christmas, in Central Square, Bonifacio Highstreet, Bonifacio Global City, Taguig City.[24] A second Philippine Hamleys store is also set to open the following year.[25] Stores Specialists Inc. (SSI) Group is the exclusive distributor of Hamleys in the Philippines.</p>
+			</div><!-- end col-sm-6 -->
+		</div><!-- end moreInfo -->
+
+
+		<hr>
+
+		<div class="row" id="moreCourses">
+			<div class="col-12">
+				<h3>Welcome To Home of Toys</h3>
+				<div class="thumbnails row">
+					<div class="col-6">
+						<div class="thumbnail">
+							<img src="images/section1.jpeg" alt="Toys">
+
+							<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>45</div>
+
+							<div class="caption">
+								<h3>Aren't We Lovely? </h3>
+
+								<p>Sooo Many Toys,,,,Sooo Little Time.... <br>
+									What To Do??</p>
+
+									<p><a href="https://www.google.co.in/search?q=toys+images&espv=2&biw=1366&bih=613&site=webhp&tbm=isch&imgil=TKxb6nTqJ-dFSM%253A%253By-75asNmHvPuEM%253Bhttps%25253A%25252F%25252Fwww.shutterstock.com%25252Fsearch%25252Ftoys&source=iu&pf=m&fir=TKxb6nTqJ-dFSM%253A%252Cy-75asNmHvPuEM%252C_&usg=__U3NzKlcH4E6OjHpba8PuM9ND3nc%3D&ved=0ahUKEwiKg7W36NfQAhUGT48KHUKED_oQyjcIMg&ei=fp5CWIrMHIaevQTCiL7QDw#imgrc=TKxb6nTqJ-dFSM%3A" class="btn bts btn-primary btn-small" target="_blank">Some more Additions</a> <a href="https://www.google.co.in/search?q=toys+images&espv=2&biw=1366&bih=613&site=webhp&tbm=isch&imgil=TKxb6nTqJ-dFSM%253A%253By-75asNmHvPuEM%253Bhttps%25253A%25252F%25252Fwww.shutterstock.com%25252Fsearch%25252Ftoys&source=iu&pf=m&fir=TKxb6nTqJ-dFSM%253A%252Cy-75asNmHvPuEM%252C_&usg=__U3NzKlcH4E6OjHpba8PuM9ND3nc%3D&ved=0ahUKEwiKg7W36NfQAhUGT48KHUKED_oQyjcIMg&ei=fp5CWIrMHIaevQTCiL7QDw#imgrc=TKxb6nTqJ-dFSM%3A target="_blank" class="btn btn-small btn-link">Search More</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/section2.jpg" alt="Puzzels">
+
+								<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>60 </div>
+
+								<div class="caption">
+									<h3>Welcome to the Puzzel World</h3>
+
+									<p>I love words. Sudoku I don't get into, I'm not into numbers that much, and there are people who are hooked on that.</p>
+
+									<p><a href="https://www.google.co.in/search?q=toys+images&espv=2&biw=1366&bih=613&site=webhp&tbm=isch&imgil=TKxb6nTqJ-dFSM%253A%253By-75asNmHvPuEM%253Bhttps%25253A%25252F%25252Fwww.shutterstock.com%25252Fsearch%25252Ftoys&source=iu&pf=m&fir=TKxb6nTqJ-dFSM%253A%252Cy-75asNmHvPuEM%252C_&usg=__U3NzKlcH4E6OjHpba8PuM9ND3nc%3D&ved=0ahUKEwiKg7W36NfQAhUGT48KHUKED_oQyjcIMg&ei=fp5CWIrMHIaevQTCiL7QDw#tbm=isch&q=puzzels+images" class="btn bts btn-primary btn-small" target="_blank">Some more Additions</a> <a href="https://www.google.co.in/search?q=toys+images&espv=2&biw=1366&bih=613&site=webhp&tbm=isch&imgil=TKxb6nTqJ-dFSM%253A%253By-75asNmHvPuEM%253Bhttps%25253A%25252F%25252Fwww.shutterstock.com%25252Fsearch%25252Ftoys&source=iu&pf=m&fir=TKxb6nTqJ-dFSM%253A%252Cy-75asNmHvPuEM%252C_&usg=__U3NzKlcH4E6OjHpba8PuM9ND3nc%3D&ved=0ahUKEwiKg7W36NfQAhUGT48KHUKED_oQyjcIMg&ei=fp5CWIrMHIaevQTCiL7QDw#tbm=isch&q=puzzels+images" target="_blank" class="btn btn-small btn-link">Search More</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+					</div><!-- end row -->
+				</div><!-- end col-12 -->
+			</div><!-- end moreCourses -->
+		</div><!-- end container -->
+
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h6>Copyright &copy; 2016 {Punit}</h6>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>Henry's Toyshop is the oldest and largest toy shop in the world. It is named after William Hamley, who founded a toy shop called "Noah's Ark" at No. 231 High Holborn, London, in 1760. Ownership of the shop passed through the family, and by the time it was operated by Hamley's grandsons in 1837, the store had become famous, counting royalty and nobility among its customers</p>
+					</div><!-- end col-sm-4 -->
+
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h6>Stay in Touch</h6>
+						<ul class="unstyled">
+							<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Punit</h6>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
+
+	</body>
+	</html>
